@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EKutuphaneCore.Abstract
+namespace EKutuphaneDataAccess.Abstract
 {
-	public abstract class BaseEntity 
+	public interface IGenericDal <T> where T : class
 	{
-        public int Id { get; set; }
-    }
+	}
 }

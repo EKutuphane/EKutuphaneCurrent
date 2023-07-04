@@ -3,9 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EKutuphaneCore", "EKutuphane\EKutuphaneCore.csproj", "{6DAD1C05-2492-4AB0-81A9-109D9C1B2C14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EKutuphaneCore", "EKutuphane\EKutuphaneCore.csproj", "{6DAD1C05-2492-4AB0-81A9-109D9C1B2C14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EKutuphaneDataAccess", "EKutuphaneDataAccess\EKutuphaneDataAccess.csproj", "{96F1D0E8-2FA4-4FCD-A761-B19DC745EC35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EKutuphaneDataAccess", "EKutuphaneDataAccess\EKutuphaneDataAccess.csproj", "{96F1D0E8-2FA4-4FCD-A761-B19DC745EC35}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6DAD1C05-2492-4AB0-81A9-109D9C1B2C14} = {6DAD1C05-2492-4AB0-81A9-109D9C1B2C14}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

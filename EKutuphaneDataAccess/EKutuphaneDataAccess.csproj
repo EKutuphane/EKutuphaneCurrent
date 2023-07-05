@@ -20,8 +20,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Concrete\" />
-    <Folder Include="EntityFramework\" />
     <Folder Include="Repository\" />
   </ItemGroup>
 

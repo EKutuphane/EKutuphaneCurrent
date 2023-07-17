@@ -1,5 +1,4 @@
-﻿using EKutuphaneCore.Abstract;
-using EKutuphaneDataAccess.Abstract;
+﻿using EKutuphaneCore.Entity;
 using EKutuphaneDataAccess.Concrete;
 using EKutuphaneDataAccess.Repository;
 using System;
@@ -10,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace EKutuphaneDataAccess.EntityFramework
 {
-    public class EfBaseAuthorInfosDal : GenericRepository<BaseAuthorInfos>
+    public class EfMemberDal : GenericRepository<Member>
     {
-        public EfBaseAuthorInfosDal(Context context) : base(context)
+        public EfMemberDal(Context context) : base(context)
         {
         }
     }

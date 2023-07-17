@@ -13,7 +13,7 @@ namespace EKutuphaneDataAccess.Concrete
 	{
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
-			base.OnConfiguring(optionsBuilder);
+			optionsBuilder.UseSqlServer("");
 		}
 
         public DbSet<BaseAuthorInfos> BaseAuthorInfos { get; set; }
@@ -23,5 +23,8 @@ namespace EKutuphaneDataAccess.Concrete
 		public DbSet<Book>Books { get; set; }
 		public DbSet<Manager> Managers { get; set; }
 		public DbSet<Member> Members { get; set; }
+
+
     }
+	
 }
